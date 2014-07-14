@@ -71,7 +71,7 @@ void printHelpStatement(void){
 	cout<<"This program standardizes the iHS values computed by iHS and iHS_multithreaded"<<endl;
 	cout<<"arguments: fileListFile numBins"<<endl;
 	cout<<"\n\nThe fileListFile has the following tab-delimited format per line: \"path_to_unstandardized_iHS_file [tab] name_of_chromosome_in_file\""<<endl;
-	cout<<"Standardization is done by first binning iHS values by the minor allele frequency of the core SNP, and then conducting Z-normalization within each bin. The number of bins parameter thus defines the width of each frequency bin for normalization. More bins means fewer values in each bin, so extreme values may become less noticeable if there is insufficient values in each bin."<<endl;
+	cout<<"Standardization is done by first binning iHS values by the minor allele frequency of the core SNP, and then conducting Z-normalization within each bin. The number of bins parameter thus defines the width of each frequency bin for normalization. More bins means fewer values in each bin, so extreme values may become less noticible if there is insufficient values in each bin."<<endl;
 }
 
 /*

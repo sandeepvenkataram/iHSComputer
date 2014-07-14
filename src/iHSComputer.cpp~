@@ -610,7 +610,7 @@ void computeiHS(int position, ofstream &outFileStream){
 }
 
 /*
- * compute iHS in one direction (either walking 3' or 5' from core SNP)
+ * compute iHS in one direction (either walking 3' or 5' from core SNP
  */
 int computeHalfiHS(map<int, double> * EHHd, map<int, double> * EHHa, vector<string> present, vector<string> absent, int position, int indexIncrement, int numPresent, int numAbsent){
 	int curIndex = position+indexIncrement;
