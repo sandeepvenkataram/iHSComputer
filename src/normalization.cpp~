@@ -142,7 +142,7 @@ void computeStandardizediHS(vector<string> filenames, vector<string> chromosomes
 	//compute the mean and stdev within each bin
 	
 	for(int i=0; i<freqBins.size(); i++){
-		double sum = 0;//std::accumulate(std::begin(freqBins[i]), std::end(freqBins[i]), 0.0);
+		double sum = 0;
 		for(int j=0; j<freqBins[i].size(); j++){
 			double d = freqBins[i][j];
 			sum+=d;
