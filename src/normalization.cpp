@@ -84,9 +84,20 @@ void computeStandardizediHS(vector<string> filenames, vector<string> chromosomes
 	vector<vector<double> > temp (numBins);
 	freqBins=temp;
 	
+	for(int i=0; i<filenames.size(); i++){
+		if(!fexists(filenames[i])){
+			cerr<<"File "<<filenames[i]<<" does not exist!"<<endl;
+			exit(1);
+		}
+	}
+	
 	if(normalizeEqualSizedBins){
 		vector<double> iHSValues;
 		for(int i=0; i<filenames.size(); i++){
+			if(!fexists(file1name)){
+				cerr<<"File listing iHS files to be standardized does not exist!"<<endl;
+				exit(1);
+			}
 			ifstream inFile(filenames[i].c_str());
 			while(!inFile.eof()){
 				string l;

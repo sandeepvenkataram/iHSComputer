@@ -110,7 +110,7 @@ void computeStandardizediHS(vector<string> filenames, vector<string> chromosomes
 			if(binNumber>=numBins){
 				binNumber = numBins-1;
 			}
-			temp[binNumber].push_back(iHSValues[i]);
+			freqBins[binNumber].push_back(iHSValues[i]);
 			
 		}
 		
